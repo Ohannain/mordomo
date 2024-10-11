@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="37.542896mm"
+   height="23.498428mm"
+   viewBox="0 0 37.542896 23.498428"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" /><defs
+     id="defs1"><style
+       id="style1">.a{opacity:0;}.b{fill:#fff;}.c{fill:#ff5f00;}.d{fill:#eb001b;}.e{fill:#f79e1b;}</style></defs><g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-115.957,-103.23385)"><rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#c8c8c8;stroke-width:0.774;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="36.76889"
+       height="22.724424"
+       x="116.34399"
+       y="103.62085"
+       ry="2.7851663" /><g
+       id="g3"
+       transform="matrix(0.20713463,0,0,0.20713463,121.12072,105.98306)"><g
+         class="a"
+         id="g1-2"><rect
+           class="b"
+           width="131.39"
+           height="86.900002"
+           id="rect1"
+           x="0"
+           y="0" /></g><rect
+         class="c"
+         x="48.369999"
+         y="15.14"
+         width="34.66"
+         height="56.610001"
+         id="rect2" /><path
+         class="d"
+         d="m 51.94,43.45 a 35.94,35.94 0 0 1 13.75,-28.3 36,36 0 1 0 0,56.61 35.94,35.94 0 0 1 -13.75,-28.31 z"
+         id="path2" /><path
+         class="e"
+         d="M 120.5,65.76 V 64.6 h 0.5 v -0.24 h -1.19 v 0.24 h 0.47 v 1.16 z m 2.31,0 v -1.4 h -0.36 l -0.42,1 -0.42,-1 h -0.36 v 1.4 h 0.26 V 64.7 l 0.39,0.91 h 0.27 l 0.39,-0.91 v 1.06 z"
+         id="path3" /><path
+         class="e"
+         d="m 123.94,43.45 a 36,36 0 0 1 -58.25,28.3 36,36 0 0 0 0,-56.61 36,36 0 0 1 58.25,28.3 z"
+         id="path4" /></g></g><style
+     type="text/css"
+     id="style1-7">
+	.st0{fill:#1434CB;}
+</style></svg>
