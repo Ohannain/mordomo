@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="assets/favicon.ico" />
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
         <script src="script.js"></script>
 
         <title>Mordomo | TailorMate</title>
@@ -15,26 +16,68 @@
         <header>
             <div id="header-container">
                 <div id="header-logo-container">
-                    <img src="assets/badges/smart_home/google_home.svg" alt="Mordomo Logo" id="header-logo" />
+                    <a href="">
+                        <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="header-logo" title="Mordomo" />
+                    </a>
                 </div>
                 <div id="header-navigation-container">
                     <nav id="header-main-navigation">
-                        <button class="button-transparent">Produkte</button>
-                        <button class="button-transparent">Inspiration</button>
-                        <button class="button-transparent">SmartHome Plus</button>
+                        <button class="button-transparent" id="header-nav-products-btn" title="Open products dropdown menu"><span class="material-symbols-rounded">chevron_right</span><em>Produkte</em></button>
+                        <button class="button-transparent" id="header-nav-inspiration-btn" title="Open inspiration dropdown menu"><span class="material-symbols-rounded">chevron_right</span><em>Inspiration</em></button>
+                        <button class="button-transparent" id="header-nav-smarthome-btn" title="Open smarthome dropdown menu"><span class="material-symbols-rounded">chevron_right</span><em>SmartHome Plus</em></button>
                     </nav>
                 </div>
                 <div id="header-account-container">
-                    <button class="button-transparent"><span class="material-symbols-rounded">search</span>Suchen</button>
-                    <button class="button-transparent"><span class="material-symbols-rounded">shopping_cart</span>Warenkorb</button>
-                    <button class="button-transparent"><span class="material-symbols-rounded">login</span>Login</button>
-                    <button id="header-darkmode-btn" class="button-round"><span class="material-symbols-rounded">dark_mode</span></button>
+                    <button class="button-transparent"><span class="material-symbols-rounded">search</span><em>Suchen</em></button>
+                    <button class="button-transparent"><span class="material-symbols-rounded">shopping_cart</span><em>Warenkorb</em></button>
+                    <button class="button-transparent"><span class="material-symbols-rounded">login</span><em>Login</em></button>
+                    <button id="header-darkmode-btn" class="button-round" title="Webseiten-Thema ändern"><span class="material-symbols-rounded">dark_mode</span></button>
+                </div>
+            </div>
+            <div id="header-dropdown-container">
+                <div class="header-dropdown" id="header-dropdown-products">
+                    <hr />
+                    <div class="header-dropdown-content-container">
+                        <div class="header-dropdown-item">
+                            <a>LookingGlass</a>
+                            <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                        </div>
+                        <div class="header-dropdown-item">
+                            <a>TailorMate</a>
+                            <img src="assets/bitmap/smart_wardrobe.jpeg" alt="TailorMate Thumbnail" title="TailorMate"/>
+                        </div>
+                        <div class="header-dropdown-item">
+                            <a>Cloud 9</a>
+                            <img src="assets/bitmap/smart_bed.jpeg" alt="Cloud 9 Thumbnail" title="Cloud 9"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-dropdown" id="header-dropdown-inspiration">
+                    <hr />
+                    <div class="header-dropdown-content-container">
+                        <div class="header-dropdown-content-image-container">
+                            <div class="header-dropdown-item">
+                                <a>LookingGlass</a>
+                                <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                            </div>
+                            <div class="header-dropdown-item">
+                                <a>LookingGlass</a>
+                                <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-dropdown" id="header-dropdown-smarthome">
+                    <hr />
+                    <div class="header-dropdown-content-container">
+
+                    </div>
                 </div>
             </div>
         </header>
         <main>
             <div id="main-container">
-                <h1>Mondomo TailorMate</h1>
+                <h1>Mordomo TailorMate</h1>
             </div>
         </main>
         <footer>
@@ -49,7 +92,7 @@
             </div>
             <div id="footer-container">
                 <div id="footer-back-top-container">
-                    <button id="footer-back-top" class="button-round">
+                    <button id="footer-back-top" class="button-round" title="Zurück zum Anfang">
                         <em>Zum Anfang</em>
                         <span class="material-symbols-rounded">vertical_align_top</span>
                     </button>
@@ -85,35 +128,35 @@
                     </div>
                 </div>
                 <div id="footer-logo-container">
-                    <img src="assets/badges/smart_home/google_home.svg" alt="Mordomo Logo" />
+                    <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="footer-logo" title="Mordomo" />
                 </div>
                 <div id="footer-payments-container">
-                    <img src="assets/badges/payment_methods/master_card.svg" alt="MasterCard is accepted as a payment method." />
-                    <img src="assets/badges/payment_methods/visa.svg" alt="Visa is accepted as a payment method." />
-                    <img src="assets/badges/payment_methods/paypal.svg" alt="PayPal is accepted as a payment method." />
-                    <img src="assets/badges/payment_methods/google_pay.svg" alt="Google Pay is accepted as a payment method." />
-                    <img src="assets/badges/payment_methods/apple_pay.svg" alt="Apple Pay is accepted as a payment method." />
-                    <img src="assets/badges/payment_methods/klarna.svg" alt="Klarna is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/master_card.svg" alt="MasterCard is accepted as a payment method." title="MasterCard is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/visa.svg" alt="Visa is accepted as a payment method." title="Visa is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/paypal.svg" alt="PayPal is accepted as a payment method." title="PayPal is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/google_pay.svg" alt="Google Pay is accepted as a payment method." title="Google Pay is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/apple_pay.svg" alt="Apple Pay is accepted as a payment method." title="Apple Pay is accepted as a payment method." />
+                    <img src="assets/badges/payment_methods/klarna.svg" alt="Klarna is accepted as a payment method." title="Klarna is accepted as a payment method." />
                 </div>
                 <div id="footer-social-container">
-                    <a href="https://www.facebook.com/">Facebook</a>
-                    <a href="https://www.instagram.com/">Instagram</a>
-                    <a href="https://www.youtube.com/">YouTube</a>
-                    <a href="https://www.linkedin.com/">LinkedIn</a>
-                    <a href="https://www.xing.com/">Xing</a>
+                    <a href="https://www.facebook.com/" title="Mordomo auf Facebook">Facebook</a>
+                    <a href="https://www.instagram.com/" title="Mordomo auf Instagram">Instagram</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D" title="Never Gonna Give You Up auf YouTube">YouTube</a>
+                    <a href="https://www.linkedin.com/" title="Mordomo auf LinkedIn">LinkedIn</a>
+                    <a href="https://www.xing.com/" title="Mordomo auf Xing">Xing</a>
                 </div>
                 <div id="footer-legal-container">
                     <hr />
                     <div id="footer-legal-flex-container">
                         <div id="footer-legal-copyright-container">
-                            <h4>© Mondomo GmbH 2024</h4>
+                            <h4>© Mordomo GmbH 2024</h4>
                         </div>
                         <div id="footer-legal-links-container">
-                            <a>Impressum</a>
-                            <a>Datenschutzerklärung</a>
-                            <a>AGB</a>
-                            <a>Widerrufsrecht</a>
-                            <a>Kontakt</a>
+                            <a title="Impressum">Impressum</a>
+                            <a title="Datenschutzerklärung">Datenschutzerklärung</a>
+                            <a title="Allgemeine Geschäftsbedingungen">AGB</a>
+                            <a title="Widerrufsrecht">Widerrufsrecht</a>
+                            <a title="Kontaktmöglichkeiten">Kontakt</a>
                         </div>
                     </div>
                 </div>
