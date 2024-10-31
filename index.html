@@ -4,11 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         
+        <script src="script.js"></script>
+
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/fonts/material_symbols_rounded.ttf" type="font/ttf" />
-
-        <script src="script.js"></script>
 
         <title>Mordomo | TailorMate</title>
     </head>
@@ -16,8 +16,8 @@
         <header>
             <div id="header-container">
                 <div id="header-logo-container">
-                    <a href="">
-                        <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="header-logo" title="Mordomo" tabindex="1" />
+                    <a href="" tabindex="1">
+                        <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="header-logo" title="Mordomo" />
                     </a>
                 </div>
                 <div id="header-navigation-container">
@@ -55,12 +55,12 @@
                 </div>
                 <div id="header-mobile-container">
                     <div id="header-mobile-logo-container">
-                        <a href="">
-                            <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="header-mobile-logo" title="Mordomo" tabindex="1" />
+                        <a href="" tabindex="1">
+                            <img src="assets/logo/mordomo_light_orange.svg" alt="Mordomo Logo" id="header-mobile-logo" title="Mordomo" />
                         </a>
                     </div>
                     <div id="header-mobile-menu-container">
-                        <button id="header-mobile-menu-btn" class="button-round" title="Menü öffnen" tabindex="-1">
+                        <button id="header-mobile-menu-btn" class="button-round" title="Menü öffnen" tabindex="1">
                             <span class="material-symbols-rounded">menu</span>
                         </button>
                     </div>
@@ -106,6 +106,47 @@
                     </div>
                 </div>
             </div>
+            <div id="header-mobile-flyout-container">
+                <div id="header-mobile-flyout-close-container">
+                    <button id="header-flyout-darkmode-btn" class="button-round" title="Webseiten-Thema ändern" tabindex="-1">
+                        <span class="material-symbols-rounded">dark_mode</span>
+                    </button>
+                    <button id="header-mobile-flyout-close-btn" class="button-round" title="Menü öffnen" tabindex="1">
+                        <span class="material-symbols-rounded">close</span>
+                    </button>
+                </div>
+                <div id="header-mobile-flyout-search-container">
+                    <input id="header-mobile-flyout-search-bar" type="text" placeholder="Search..." />
+                </div>
+                <div id="header-mobile-flyout-account-container">
+                    <button id="header-mobile-flyout-login" class="button-round" tabindex="7">
+                        <em>Login</em>
+                        <span class="material-symbols-rounded">login</span>
+                    </button>
+                    <button id="header-mobile-flyout-shopping" class="button-round" tabindex="6">
+                        <em>Warenkorb</em>
+                        <span class="material-symbols-rounded">shopping_cart</span>
+                    </button>
+                </div>
+                <div id="header-mobile-flyout-hr-container">
+                    <hr />
+                </div>
+                <div id="header-mobile-flyout-menu-container">
+                    <div id="header-mobile-flyout-products-menu" class="header-mobile-flyout-menu-category-container">
+                        <h2>Produkte</h2>
+                        <a>Looking Glass</a>
+                        <a>TailorMate</a>
+                        <a>Cloud 9</a>
+                        <a>SmartHome Plus</a>
+                    </div>
+                    <div id="header-mobile-flyout-inspiration-menu" class="header-mobile-flyout-menu-category-container">
+                        <h2>Inspiration</h2>
+                        <a>Räume</a>
+                        <a>Automationen</a>
+                        <a>Lifestyle</a>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
             <div id="main-container">
@@ -136,8 +177,8 @@
                             <ul>
                                 <li><a>LookingGlass</a></li>
                                 <li><a>TailorMate</a></li>
-                                <li><a>TailorMate Plus</a></li>
                                 <li><a>Cloud 9</a></li>
+                                <li><a>SmartHome Plus</a></li>
                             </ul>
                         </div>
                         <div id="footer-content-help">
