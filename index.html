@@ -7,7 +7,7 @@
         <script src="script.js"></script>
 
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/fonts/material_symbols_rounded.ttf" type="font/ttf" />
 
         <title>Mordomo | TailorMate</title>
@@ -30,7 +30,7 @@
                             <span class="material-symbols-rounded">style</span>
                             <em>Inspiration</em>
                         </button>
-                        <button class="button-transparent" id="header-nav-smarthome-btn" title="Open smarthome dropdown menu" tabindex="4">
+                        <button class="button-transparent" id="header-nav-smarthome-btn" title="Go to SmartHome Plus" tabindex="4">
                             <span class="material-symbols-rounded">in_home_mode</span>
                             <em>SmartHome Plus</em>
                         </button>
@@ -68,41 +68,72 @@
             </div>
             <div id="header-dropdown-container">
                 <div class="header-dropdown" id="header-dropdown-products">
-                    <hr />
+                    <div class="header-dropdown-hr-container">
+                        <hr />
+                    </div>
                     <div class="header-dropdown-content-container">
                         <div class="header-dropdown-item">
-                            <a>LookingGlass</a>
-                            <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                            <div class="header-dropdown-content-image-container">
+                                <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                                <button class="button-round" title="Produktseite öffnen">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                            <div class="header-dropdown-content-title-container">
+                                <h2>LookingGlass</h2>
+                            </div>
                         </div>
                         <div class="header-dropdown-item">
-                            <a>TailorMate</a>
-                            <img src="assets/bitmap/smart_wardrobe.jpeg" alt="TailorMate Thumbnail" title="TailorMate"/>
+                            <div class="header-dropdown-content-image-container">
+                                <img src="assets/bitmap/smart_wardrobe.jpeg" alt="TailorMate Thumbnail" title="TailorMate"/>
+                                <button class="button-round" title="Produktseite öffnen">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                            <div class="header-dropdown-content-title-container">
+                                <h2>TailorMate</h2>
+                            </div>
                         </div>
                         <div class="header-dropdown-item">
-                            <a>Cloud 9</a>
-                            <img src="assets/bitmap/smart_bed.jpeg" alt="Cloud 9 Thumbnail" title="Cloud 9"/>
+                            <div class="header-dropdown-content-image-container">
+                                <img src="assets/bitmap/smart_bed.jpeg" alt="Cloud 9 Thumbnail" title="Cloud 9"/>
+                                <button class="button-round" title="Produktseite öffnen">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                            <div class="header-dropdown-content-title-container">
+                                <h2>Cloud 9</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="header-dropdown" id="header-dropdown-inspiration">
-                    <hr />
+                    <div class="header-dropdown-hr-container">
+                        <hr />
+                    </div>
                     <div class="header-dropdown-content-container">
-                        <div class="header-dropdown-content-image-container">
-                            <div class="header-dropdown-item">
-                                <a>LookingGlass</a>
-                                <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                        <div class="header-dropdown-item">
+                            <div class="header-dropdown-content-image-container">
+                                <img src="assets/bitmap/bathroom.jpg" alt="Rooms Thumbnail" title="Rauminspiration" />
+                                <button class="button-round" title="Inspirationsseite öffnen">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
                             </div>
-                            <div class="header-dropdown-item">
-                                <a>LookingGlass</a>
-                                <img src="assets/bitmap/smart_mirror.jpeg" alt="LookingGlass Thumbnail" title="LookingGlass" />
+                            <div class="header-dropdown-content-title-container">
+                                <h2>Räume</h2>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="header-dropdown" id="header-dropdown-smarthome">
-                    <hr />
-                    <div class="header-dropdown-content-container">
-
+                        <div class="header-dropdown-item">
+                            <div class="header-dropdown-content-image-container">
+                                <img src="assets/bitmap/automation.webp" alt="Automation Thumbnail" title="Automationsinspiration" />
+                                <button class="button-round" title="Ablaufseite öffnen">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                            <div class="header-dropdown-content-title-container">
+                                <h2>Automationen</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,12 +142,15 @@
                     <button id="header-flyout-darkmode-btn" class="button-round" title="Webseiten-Thema ändern" tabindex="-1">
                         <span class="material-symbols-rounded">dark_mode</span>
                     </button>
-                    <button id="header-mobile-flyout-close-btn" class="button-round" title="Menü öffnen" tabindex="1">
+                    <button id="header-mobile-flyout-close-btn" class="button-round" title="Menü schließen" tabindex="1">
                         <span class="material-symbols-rounded">close</span>
                     </button>
                 </div>
                 <div id="header-mobile-flyout-search-container">
-                    <input id="header-mobile-flyout-search-bar" type="text" placeholder="Search..." />
+                    <div id="header-mobile-flyout-search-bar-container">
+                        <span class="material-symbols-rounded">search</span>
+                        <input id="header-mobile-flyout-search-bar" type="text" placeholder="Search..." />
+                    </div>
                 </div>
                 <div id="header-mobile-flyout-account-container">
                     <button id="header-mobile-flyout-login" class="button-round" tabindex="7">

@@ -92,7 +92,6 @@ document.addEventListener("click", (event) => {
     if (event.target.id == "header-nav-products-btn" && !document.getElementById("header-mobile-flyout-container").classList.contains("show")) {
         document.getElementById("header-dropdown-products").classList.toggle("show");
         document.getElementById("header-dropdown-inspiration").classList.remove("show");
-        document.getElementById("header-dropdown-smarthome").classList.remove("show");
         if (document.getElementById("header-dropdown-products").classList.contains("show")) {
             document.getElementById("header-dropdown-container").classList.add("blur");
             document.getElementById("header-dropdown-container").classList.add("show");
@@ -105,7 +104,6 @@ document.addEventListener("click", (event) => {
     } else if (event.target.id == "header-nav-inspiration-btn" && !document.getElementById("header-mobile-flyout-container").classList.contains("show")) {
         document.getElementById("header-dropdown-inspiration").classList.toggle("show");
         document.getElementById("header-dropdown-products").classList.remove("show");
-        document.getElementById("header-dropdown-smarthome").classList.remove("show");
         if (document.getElementById("header-dropdown-inspiration").classList.contains("show")) {
             document.getElementById("header-dropdown-container").classList.add("blur");
             document.getElementById("header-dropdown-container").classList.add("show");
@@ -115,20 +113,7 @@ document.addEventListener("click", (event) => {
             document.getElementById("header-dropdown-container").classList.remove("show");
             document.body.style.overflow = "visible";
         }
-    } else if (event.target.id == "header-nav-smarthome-btn" && !document.getElementById("header-mobile-flyout-container").classList.contains("show")) {
-        document.getElementById("header-dropdown-smarthome").classList.toggle("show");
-        document.getElementById("header-dropdown-products").classList.remove("show");
-        document.getElementById("header-dropdown-inspiration").classList.remove("show");
-        if (document.getElementById("header-dropdown-smarthome").classList.contains("show")) {
-            document.getElementById("header-dropdown-container").classList.add("blur");
-            document.getElementById("header-dropdown-container").classList.add("show");
-            document.body.style.overflow = "hidden";
-        } else {
-            document.getElementById("header-dropdown-container").classList.remove("blur");
-            document.getElementById("header-dropdown-container").classList.remove("show");
-            document.body.style.overflow = "visible";
-        }
-    } 
+    }
 });
 
 /**
@@ -171,6 +156,19 @@ window.addEventListener("popstate", () => {
 
     if (headerMobileFlyoutContainer.classList.contains("show")) {
         headerMobileFlyoutContainer.classList.remove("show");
+        document.body.style.overflow = "visible";
+    }
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 1100 && document.getElementById("header-dropdown-container").classList.contains("show")) {
+        document.getElementById("header-dropdown-container").classList.remove("show");
+        document.getElementById("header-dropdown-container").classList.remove("blur");
+        if (document.getElementById("header-dropdown-products").classList.contains("show")) {
+            document.getElementById("header-dropdown-products").classList.remove("show");
+        } else if (document.getElementById("header-dropdown-inspiration").classList.contains("show")) {
+            document.getElementById("header-dropdown-inspiration").classList.remove("show");
+        }
         document.body.style.overflow = "visible";
     }
 });
