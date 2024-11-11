@@ -186,9 +186,8 @@ button:hover {
 /* Styling of transparent buttons */
 
 .button-transparent {
-    width: fit-content;
-    max-height: fit-content;
-    height: 3rem;
+    width: max-content;
+    /* height: max-content; */
     padding: 0;
     margin: 0;
     border: none;
@@ -269,28 +268,86 @@ header {
     display: flex;
     align-items: center;
     height: 3rem;
+    margin: 0 0 0 5rem;
 }
 
 #header-logo {
-    margin: 0 0 0 5rem;
     height: 2.5rem;
 }
 
 /* Header Navigation */
 
 #header-navigation-container {
-    display: flex;
+    display: block;
     width: calc(100% - 66rem);
-    height: fit-content;
+    height: 5rem;
+    overflow: hidden;
 }
 
 #header-main-navigation {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
     gap: 5rem;
+    height: 3rem;
     width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+#header-main-navigation div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: max-content;
+}
+
+#header-main-navigation div button {
+    position: relative;
+    height: 100%;
+    top: 0;
+    transition: top 0.1s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+}
+
+#header-nav-products-btn .open-dropdown-icon, #header-nav-inspiration-btn .open-dropdown-icon {
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: top 0.1s cubic-bezier(0.755, 0.050, 0.855, 0.060), visibility 0.1s;
+}
+
+#header-nav-products-btn .close-dropdown-icon, #header-nav-inspiration-btn .close-dropdown-icon {
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: top 0.1s cubic-bezier(0.755, 0.050, 0.855, 0.060), visibility 0.1s;
+}
+
+#header-nav-products-btn:not(.active):hover .open-dropdown-icon, #header-nav-inspiration-btn:not(.active):hover .open-dropdown-icon {
+    visibility: visible;
+    top: 100%;
+}
+
+
+#header-nav-products-btn.active:hover .close-dropdown-icon, #header-nav-inspiration-btn.active:hover .close-dropdown-icon {
+    visibility: visible;
+    top: 0%;
+}
+
+#header-nav-products-btn.active, #header-nav-inspiration-btn.active {
+    top: 0.5rem;
+}
+
+/* #header-nav-products-btn.active:hover, #header-nav-inspiration-btn.active:hover {
+    top: 0rem;
+} */
 
 /* Header Account */
 
@@ -873,10 +930,10 @@ footer {
         display: flex;
         align-items: center;
         height: 3rem;
+        margin: 0 0 0 5rem;
     }
 
     #header-mobile-logo {
-        margin: 0 0 0 5rem;
         height: 2.5rem;
     }
 
@@ -980,10 +1037,12 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-   
+    #header-mobile-logo-container a {
+        margin: 0 0 0 1rem;
+    }
+
     #header-mobile-logo {
         max-width: 70%;
-        margin: 0 0 0 1rem;
     }
 
     #header-mobile-menu-container {

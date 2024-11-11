@@ -92,7 +92,9 @@ document.addEventListener("click", (event) => {
     if (event.target.id == "header-nav-products-btn" && !document.getElementById("header-mobile-flyout-container").classList.contains("show")) {
         document.getElementById("header-dropdown-products").classList.toggle("show");
         document.getElementById("header-dropdown-inspiration").classList.remove("show");
+        document.getElementById("header-nav-products-btn").classList.toggle("active");
         if (document.getElementById("header-dropdown-products").classList.contains("show")) {
+            document.getElementById("header-nav-inspiration-btn").classList.remove("active");
             document.getElementById("header-dropdown-container").classList.add("blur");
             document.getElementById("header-dropdown-container").classList.add("show");
             document.body.style.overflow = "hidden";
@@ -104,7 +106,9 @@ document.addEventListener("click", (event) => {
     } else if (event.target.id == "header-nav-inspiration-btn" && !document.getElementById("header-mobile-flyout-container").classList.contains("show")) {
         document.getElementById("header-dropdown-inspiration").classList.toggle("show");
         document.getElementById("header-dropdown-products").classList.remove("show");
+        document.getElementById("header-nav-inspiration-btn").classList.toggle("active");
         if (document.getElementById("header-dropdown-inspiration").classList.contains("show")) {
+            document.getElementById("header-nav-products-btn").classList.remove("active");
             document.getElementById("header-dropdown-container").classList.add("blur");
             document.getElementById("header-dropdown-container").classList.add("show");
             document.body.style.overflow = "hidden";
@@ -166,8 +170,10 @@ window.addEventListener("resize", () => {
         document.getElementById("header-dropdown-container").classList.remove("blur");
         if (document.getElementById("header-dropdown-products").classList.contains("show")) {
             document.getElementById("header-dropdown-products").classList.remove("show");
+            document.getElementById("header-nav-products-btn").classList.remove("active");
         } else if (document.getElementById("header-dropdown-inspiration").classList.contains("show")) {
             document.getElementById("header-dropdown-inspiration").classList.remove("show");
+            document.getElementById("header-nav-inspiration-btn").classList.remove("active");
         }
         document.body.style.overflow = "visible";
     }
