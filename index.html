@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c6ac8f" />
         
         <script src="script.js"></script>
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/fonts/material_symbols_rounded.ttf" type="font/ttf" />
 
@@ -233,18 +234,224 @@
                         </button>
                     </div>
                     <div id="main-landing-page-information-shopping-container">
-                        <button id="main-landing-page-information-shop-now-btn" class="button-round" title="Produkt zum Warenkorb hinzufügen">
+                        <button id="main-landing-page-information-shop-now-btn" class="button-round" title="Produkt zum Warenkorb hinzufügen" >
                             <span class="material-symbols-rounded">add_shopping_cart</span>
                             <em>Jetzt kaufen</em>
                         </button>
+                        <div id="main-landing-page-information-amount-btn">
+                            <button id="main-landing-page-information-amount-decrement-btn">
+                                <span class="material-symbols-rounded">remove</span>
+                            </button>
+                            <input id="main-landing-page-information-amount" type="number" min="1" max="99" value="1" required />
+                            <button id="main-landing-page-information-amount-increment-btn">
+                                <span class="material-symbols-rounded">add</span>
+                            </button>
+                        </div>
                         <button id="main-landing-page-information-list-btn" class="button-round" title="Produkt zur Wunschliste hinzufügen">
                             <span class="material-symbols-rounded">favorite</span>
                         </button>
+                        <div id="main-landing-page-information-added-to-cart-alert-container" >
+                            <div class="popup-alert-triangle"></div>
+                            <div class="popup-alert-text-container">
+                                <p id="main-landing-page-information-added-to-cart-alert-text" class="popup-alert-text"></p>
+                            </div>
+                        </div>
+                        <div id="main-landing-page-information-set-amount-alert-container" >
+                            <div class="popup-alert-triangle"></div>
+                            <div class="popup-alert-text-container">
+                                <p class="popup-alert-text">Nice!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main-landing-page-information-price-container">
+                        <div id="main-landing-page-price-container">
+                            <h3 id="main-landing-page-price">690,69</h3><h4 id="main-landing-page-currency">€</h4>
+                        </div>
+                        <div id="main-landing-page-price-information">
+                            <p>Preis inkl. MwSt.</p>
+                            <p>zzgl. Lieferkosten</p>
+                        </div>
+                    </div>
+                    <div id="main-landing-page-information-accordion-container">
+                        <div class="accordion-element">
+                            <button class="button-transparent accordion-element-title">
+                                <h3>Produktinformationen</h3>
+                                <span class="material-symbols-rounded">keyboard_arrow_down</span>
+                            </button>
+                            <div class="accordion-element-content">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos 
+                                    et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                                    takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea 
+                                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-element">
+                            <button class="button-transparent accordion-element-title">
+                                <h3>Montagehinweise</h3>
+                                <span class="material-symbols-rounded">keyboard_arrow_down</span>
+                            </button>
+                            <div class="accordion-element-content">
+                                <div>
+                                    <a href="">
+                                        <h4>Montageanleitung</h4>
+                                        <span class="material-symbols-rounded">file_save</span>
+                                    </a>
+                                </div>
+                                <hr>
+                                <div>
+                                    <a href="">
+                                        <h4>Videoanleitung</h4>
+                                        <span class="material-symbols-rounded">smart_display</span>
+                                    </a>
+                                </div>
+                                <hr>
+                                <div>
+                                    <a href="">
+                                        <h4>Dokumentation</h4>
+                                        <span class="material-symbols-rounded">open_in_new</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="main-container">
-                
+                <section id="main-functionality-section" class="main-section">
+
+                </section>
+                <section id="main-rezensionen-section" class="main-section">
+                    <div id="main-rezensionen-title-container">
+                        <h2>Das sagen unsere Kunden..</h2>
+                    </div>
+                    <div id="main-rezensionen-container">
+                        <div class="rezension-container">
+                            <div class="rezension-buyer-info-container">
+                                <img src="/assets/bitmap/avatar_1.png" alt="avatar" class="rezension-avatar">
+                                <div class="rezension-buyer-info-name-container">
+                                    <h4>Ingvar Kamprad</h4>
+                                    <p><span class="material-symbols-rounded">verified</span>Verifizierter Käufer</p>
+                                </div>
+                            </div>
+                            <div class="rezension-star-rating-container">
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded ">star</span>
+                                <span class="material-symbols-rounded ">star</span>
+                                <span class="material-symbols-rounded ">star</span>
+                                <span class="material-symbols-rounded ">star</span>
+                            </div>
+                            <div class="rezension-text-container">
+                                <p>Ikea ist besser. grrr</p>
+                            </div>
+                            <div class="rezension-information-container">
+                                <div class="rezension-information-container-voted-container">
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_up</span>
+                                        <p>1</p>
+                                    </div>
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_down</span>
+                                        <p>42</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>heute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rezension-container">
+                            <div class="rezension-buyer-info-container">
+                                <img src="/assets/bitmap/avatar_2.png" alt="avatar" class="rezension-avatar">
+                                <div class="rezension-buyer-info-name-container">
+                                    <h4>Noah Anderson</h4>
+                                    <p><span class="material-symbols-rounded">verified</span>Verifizierter Käufer</p>
+                                </div>
+                            </div>
+                            <div class="rezension-star-rating-container">
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                            </div>
+                            <div class="rezension-text-container">
+                                <p>Absoluter Gamechanger. Jetzt vergesse ich nie wieder meine Klamotten, wenn ich aus dem Haus gehe.</p>
+                            </div>
+                            <div class="rezension-information-container">
+                                <div class="rezension-information-container-voted-container">
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_up</span>
+                                        <p>12</p>
+                                    </div>
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_down</span>
+                                        <p>0</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>vor 2 Tagen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rezension-container">
+                            <div class="rezension-buyer-info-container">
+                                <img src="/assets/bitmap/avatar_3.png" alt="avatar" class="rezension-avatar">
+                                <div class="rezension-buyer-info-name-container">
+                                    <h4>Sarah Neumann</h4>
+                                    <p><span class="material-symbols-rounded">verified</span>Verifizierter Käufer</p>
+                                </div>
+                            </div>
+                            <div class="rezension-star-rating-container">
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded full">star</span>
+                                <span class="material-symbols-rounded ">star</span>
+                            </div>
+                            <div class="rezension-text-container">
+                                <p>Mit dem smarten Kleiderschrank habe ich endlich Ordnung in meinem Kleiderschrank.
+                                    Die Outfit-Vorschläge sind super hilfreich und ich entdecke immer wieder 
+                                    neue Kombinationsmöglichkeiten.</p>
+                            </div>
+                            <div class="rezension-information-container">
+                                <div class="rezension-information-container-voted-container">
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_up</span>
+                                        <p>6</p>
+                                    </div>
+                                    <div>
+                                        <span class="material-symbols-rounded">thumb_down</span>
+                                        <p>6</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>vor 8 Tagen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main-rezensionen-more-container">
+                        <button class="button-round" title="Alle Rezensionen anzeigen">
+                            Alle Rezensionen
+                        </button>
+                    </div>
+                </section>
+                <section id="main-works-with-section" class="main-section">
+                    <div id="main-works-with-title-container">
+                        <h2>Integriert sich nahtlos in deinen<br> Alltag..</h2>
+                    </div>
+                    <div id="main-works-with-content-container">
+                        <img src="assets/badges/smart_home/matter.svg" alt="Matter Badge" title="Matter"/>
+                        <img src="assets/badges/smart_home/google_home.svg" alt="Google Home Badge" title="Works with Google Home"/>
+                        <img src="assets/badges/smart_home/apple_homekit.svg" alt="Apple Homekit Badge" title="Works with Apple Home"/>
+                        <img src="assets/badges/smart_home/amazon_alexa.svg" alt="Amazon Alexa Badge" title="Works with Alexa"/>
+                        <img src="assets/badges/smart_home/samsung_smartthings.png" alt="Samsung SmartThings Badge" title="Works with Samsung SmartThings"/>
+                    </div>
+                </section>
             </div>
         </main>
         <footer>
