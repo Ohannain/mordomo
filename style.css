@@ -666,6 +666,11 @@ header {
 
 #header-mobile-flyout-account-container button {
     width: 100%;
+    justify-content: center;
+}
+
+#header-mobile-flyout-account-container button em {
+    margin: 0;
 }
 
 #header-mobile-flyout-menu-container {
@@ -696,7 +701,8 @@ main {
 }
 
 #main-landing-page-container {
-    height: calc(100svh - 8rem);
+    height: fit-content;
+    min-height: calc(100svh - 8rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 5rem 0 0 0;
@@ -711,7 +717,7 @@ main {
 }
 
 #main-landing-page-image-container {
-    height: calc(100svh - 15rem);
+    height: calc(100svh - 10rem);
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     width: 80%;
@@ -732,7 +738,7 @@ main {
 }
 
 #main-landing-page-information-container {
-    height: calc(100svh - 8rem);
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1032,6 +1038,12 @@ main {
     background-color: var(--secondary-background-colour-dark);
 }
 
+.accordion-element-title em {
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .accordion-element-title span {
     transition: transform 0.1s var(--cubic-bezier);
 }
@@ -1101,6 +1113,68 @@ main {
 #main-container h2 {
     margin: 0 0 3rem 0;
     text-align: center;
+}
+
+#main-functionality-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.main-functionality-feature {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.main-functionality-feature.feature-img-left {
+    flex-direction: row-reverse;
+}
+
+.main-functionality-feature div {
+    width: calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.main-functionality-feature.feature-img-right div {
+    align-items: end;
+}
+
+.main-functionality-feature.feature-img-left div {
+    align-items: start;
+}
+
+.main-functionality-feature.feature-img-right div:nth-child(2)  {
+    align-items: start;
+}
+
+.main-functionality-feature.feature-img-left div:nth-child(2)  {
+    align-items: end;
+}
+
+.main-functionality-feature div h3 {
+    margin: 0 0 1rem 0;
+}
+
+.main-functionality-feature.feature-img-right div p {
+    max-width: 66ch;
+    text-align: right;
+}
+
+.main-functionality-feature.feature-img-left div p {
+    max-width: 66ch;
+    text-align: left;
+}
+
+.main-functionality-feature div img {
+    width: 100%;
+    max-width: 700px;
+    object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 #main-rezensionen-section {
@@ -1288,13 +1362,15 @@ footer {
     height: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     overflow: hidden;
+    gap: 15rem;
 }
 
 .footer-made-in-germany-text {
     cursor: default;
     transition: transform 1s linear;
+    text-wrap: nowrap;
 }
 
 .dark .footer-made-in-germany-text {
@@ -1580,6 +1656,32 @@ footer {
 
     #header-mobile-menu-container {
         width: calc(100% - 25rem);
+    }
+
+    #main-functionality-container {
+        align-items: center;
+    }
+
+    .main-functionality-feature {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .main-functionality-feature.feature-img-left {
+        flex-direction: column-reverse;
+    }
+
+    .main-functionality-feature div {
+        width: 100%;
+    }
+
+    .main-functionality-feature.feature-img-right div {
+        align-items: start;
+    }
+
+    .main-functionality-feature.feature-img-right div p {
+        text-align: left;
     }
 
     #header-mobile-flyout-menu-container {
